@@ -2,9 +2,13 @@
 
 ## Make Executable CB
 
+Bootstrap once with
+
 ```
 cc cb.c -o cb
 ```
+
+After that, CB can rebuild itself. Just set `CB_SOURCE` to `cb.c` and run `./cb run`.
 
 ## How To Use
 
