@@ -69,6 +69,7 @@ void compile_source_code(int run)
             }
         }
     }
+    cb_info("Target built: %s\n", CB_TARGET);
     if (run) {
         run_executable();
     }

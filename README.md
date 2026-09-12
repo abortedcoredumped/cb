@@ -2,13 +2,16 @@
 
 ## Make Executable CB
 
-Bootstrap once with
+Build the tool itself with the system compiler:
 
 ```
 cc cb.c -o cb
 ```
 
-After that, CB can rebuild itself. Just set `CB_SOURCE` to `cb.c` and run `./cb compile`.
+CB does not rebuild itself — re-run that command after editing `cb.c`.
+
+The macros in `cb.h` are compile-time configuration: changing them has no effect
+until `cb` itself is rebuilt.
 
 ## How To Use
 
