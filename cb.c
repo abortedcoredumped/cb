@@ -92,6 +92,9 @@ int argument_handler(const char **args)
         compile_source_code(1);
     } else if (!strcmp(args[1], "compile")) {
         compile_source_code(0);
+    } else if (!strcmp(args[1], "help")) {
+        show_helper();
+        exit(0);
     } else {
         return 0;
     }

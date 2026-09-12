@@ -17,10 +17,14 @@ Edit the macros in cb.h, for example:
 #define CB_TARGET    "test"
 ```
 
-Then, feel free to use CB in your own projects.
-
-Here is an example to build and run with arguments:
+Then, build the project with:
 
 ```
 ./cb run -- foo bar
+```
+
+For more support, run
+
+```
+./cb help
 ```
