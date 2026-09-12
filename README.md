@@ -11,10 +11,10 @@ cc cb.c -o cb
 Edit the macros in cb.h, for example:
 
 ```c
-#define CB_COMPILER "cc"
-#define CB_OPTION   "-Wall"
-#define CB_SOURCE   "test.c"
-#define CB_TARGET   "test"
+#define CB_COMPILER  "cc"
+#define CB_OPTION    "-Wall"
+#define CB_SOURCE    "test.c"
+#define CB_TARGET    "test"
 ```
 
 Then, feel free to use CB in your own projects.
