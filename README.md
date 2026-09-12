@@ -1,19 +1,8 @@
 # CB: A mini builder for C/C++ projects
 
+Follow the steps to build your project with CB.
+
 ## Make Executable CB
-
-Build the tool itself with the system compiler:
-
-```
-cc cb.c -o cb
-```
-
-CB does not rebuild itself — re-run that command after editing `cb.c`.
-
-The macros in `cb.h` are compile-time configuration: changing them has no effect
-until `cb` itself is rebuilt.
-
-## How To Use
 
 Edit the macros in cb.h, for example:
 
@@ -24,7 +13,19 @@ Edit the macros in cb.h, for example:
 #define CB_TARGET    "test"
 ```
 
-Then, build the project with:
+Alter the values with your project files.
+
+Then, build the tool itself with the system compiler:
+
+```
+cc cb.c -o cb
+```
+
+Note, CB does not rebuild itself. Since configuration is saved in cb.h, where compilation burns it into image.
+
+## Build project files
+
+Build the project with:
 
 ```
 ./cb run -- foo bar
