@@ -13,7 +13,7 @@ Edit the macros in cb.h, for example:
 #define CB_TARGET    "test"
 ```
 
-Alter the values with your project files.
+Alter the values with your actual project files.
 
 Then, build the tool itself with the system compiler:
 
